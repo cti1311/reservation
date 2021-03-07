@@ -1,0 +1,259 @@
+*{
+    margin: 0px;
+    padding: 0px 0px 0px;
+    box-sizing: border-box;
+overflow-x: hidden;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    background: rgb(255, 63, 63);
+}
+
+
+.head{
+    overflow: hidden;
+    background-color:#f2f2f2;
+
+}
+
+.header{
+    padding: 10px;
+    background: rgb(255, 63, 63);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   height: 80vh;
+   width: 100vw;
+    border-bottom-right-radius: 10rem;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.desc button{
+    background-color: blue;
+    border: 0px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    margin-top:  20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.img{
+    height: 90%;
+width: auto;
+}
+
+
+
+.desc h3{
+    color: white;
+    font-weight: 900;
+    font-size: 62;
+    text-align: center;
+}
+
+.desc p{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    max-width: 45vw;
+    font-size: 11px;
+    margin-top: 6px;
+}
+
+
+.main{
+    background-color: #f2f2f2;
+    border-top-left-radius: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding-top: 60px;
+}
+
+.sevices{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+
+
+.about{
+    height: fit-content;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 15;
+    text-align: center;
+    background: rgba(255, 255, 255, 01);
+    border-radius: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 15px;
+    backdrop-filter: blur(5rem);
+    max-width: 200px;
+
+}
+
+.about img{
+    width: 80%;
+    height: 80%;
+    margin-bottom: 20px;
+}
+.about p{
+    font-size: 10;
+}
+
+/*Reservation Section*/
+
+
+.reservation{
+    color: rgb(44, 44, 44);
+    display: flex;
+    background-color: white;
+    margin-top: 70px;
+    width: 60vw;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    padding: 40px;
+}
+
+.reservation button{
+    font-size: 25px;
+    color: white;
+    background-color: blue;
+    border: 0px;
+    height: 3rem;
+    width: 3rem;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.reservation .date{
+    margin-top: 32px;
+}
+
+.reservation .date input{
+    margin-top: 10px;
+}
+
+
+.reservation .guests{
+    margin-top: 16px;
+}
+
+.reservation .guestselector{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 8px;
+}
+
+.reservation .guestselector #display{
+    background: #f2f2f2;
+    height: 3rem;
+    width: 3rem;
+    text-align:center;
+    color: blue;
+}
+
+.reservation .time{
+    margin-top: 16px;
+}
+
+.reservation .time button{
+    width: 4rem;
+    margin-top: 8px;
+    font-size: 15px;
+    color: #5e5d5d;
+    background-color: #f2f2f2;
+}
+
+.reservation  .time  button:focus{
+    color: white;
+    background: blue;    
+}
+
+.reservation .time button:disabled{
+    color: darkgrey;
+}
+.reservation .details{
+    margin-top: 16px;
+    margin-left: 5px;
+}
+
+.reservation .details textarea{
+
+width: 40vw;
+height: 80;
+background-color: #f2f2f2;
+text-align: left;
+}
+
+.reservation .submit button{
+    width: fit-content;
+    margin-top: 32px;
+    padding: 8px;
+    background-color:rgb(255, 63, 63) ;
+}
+
+.reservation .reset button{
+    width: fit-content;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 8px;
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    color: black;
+border-color:rgb(255, 63, 63) ;
+}
+
+@media screen and (max-width: 640px) {
+    .header{
+        flex-direction: column;
+    border-bottom-right-radius: 8rem;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    .img{
+        height: 200px;
+    }
+
+   .desc p{
+        max-width: 90vw;
+        font-size: 12px;
+    }
+    .sevices{
+        display: block;
+    }
+
+    .about{
+        max-width: max-content;
+    }
+
+    .reservation{
+        width: 90vw;
+        margin-top: 10px;
+    }
+}

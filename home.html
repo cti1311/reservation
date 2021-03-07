@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurent Table Reservation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="head">
+        <div class="header">
+            <div class="desc">
+                <h3>Restro</h3>
+                <p>Take the straight route to the good food.</p>
+                <div><button onclick="scrolldiv()">Book now</button></div>
+            </div>
+            <div class="di">
+                <img class="img" src="./home.png" alt="home img">
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="content">
+            <h1>Why Choose US ?</h1>
+            <div class="sevices">
+                <div class="about">
+                    <img src="./veg.png" alt="pet frendly">
+                    <h4>Pure Veg</h4>
+                </div>
+                <div class="about">
+                    <img src="./quality.png" alt="pet frendly">
+                    <h4>Voted Best Restaurent 2020</h4>
+                    <p>By RestroIndex</p>
+                </div>
+                <div class="about">
+                    <img src="./dog.png" alt="pet frendly">
+                    <h4>Pet Frendly</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="reservation">
+            <h1>Reserve A Table</h1>
+            <div class="date">
+                <h3>Pick a date</h3>
+                <input type="date" id="datepicker">
+            </div>
+            <div class="guests">
+                <h3>Guests</h3>
+                <div class="guestselector">
+                    <button id="minus" onclick="removeGuest()">-</button>
+                    <button id="display" disabled>1</button>
+                    <button id="add" onclick="addGuest()">+</button>
+                </div>
+            </div>
+            <div class="Time">
+                <h3>Time</h3>
+                <button id="b1">16:00</button>
+                <button id="b2">16:30</button>
+                <button id="b3">17:00</button>
+                <button id="b4">17:30</button>
+                <button id="b5">18:00</button>
+                <button id="b6">18:30</button>
+                <button id="b7">19:00</button>
+                <button id="b8">19:30</button>
+                <button id="b9">20:00</button>
+                <button id="b10">20:30</button>
+                <button id="b11">21:00</button>
+                <button id="b12">21:30</button>
+            </div>
+            <div class="details">
+                <textarea id="text" type="text" placeholder="Want to give some instruction?  Please write down here."></textarea>
+            </div>
+            <div class="submit">
+                <button onclick="submit()">Reserve A Table</button>
+            </div>
+            <div class="reset">
+                <button onclick="reset()">Reset LocalStorage</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
